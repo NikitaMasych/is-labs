@@ -1,0 +1,599 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.example.org/ontology.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.example.org/ontology.owl">
+    <Prefix name="" IRI="http://www.example.org/ontology.owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Animal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bark"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bird"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BirdFood"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BodyPart"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Brain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Carnivore"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cat"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Chef"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Chimpanzee"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cook"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dog"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Eagle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fish"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FishFood"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Flower"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fly"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Food"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Forest"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fur"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Habitat"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Heart"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Human"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Leaf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Limb"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LivingBeing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mammal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Meow"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Oak"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ocean"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Photosynthesis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Plant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Primate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Process"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rose"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Salmon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sparrow"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Swim"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tail"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tree"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tulip"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tuna"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wing"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#agent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#eats"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPart"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#lives_in"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#part_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#performs"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#performs_after_training"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Alice"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fido"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Animal"/>
+        <Class IRI="#LivingBeing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bark"/>
+        <Class IRI="#Process"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bird"/>
+        <Class IRI="#Animal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bird"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasPart"/>
+            <Class IRI="#Wing"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bird"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#performs"/>
+            <Class IRI="#Fly"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BirdFood"/>
+        <Class IRI="#Food"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Brain"/>
+        <Class IRI="#BodyPart"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Carnivore"/>
+        <Class IRI="#Mammal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cat"/>
+        <Class IRI="#Carnivore"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cat"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#performs"/>
+            <Class IRI="#Meow"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chef"/>
+        <Class IRI="#Human"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chef"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#performs"/>
+            <Class IRI="#Cook"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chimpanzee"/>
+        <Class IRI="#Primate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cook"/>
+        <Class IRI="#Process"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cook"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#agent"/>
+            <Class IRI="#Chef"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cook"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#agent"/>
+            <Class IRI="#Human"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cook"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#agent"/>
+            <Class IRI="#Primate"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dog"/>
+        <Class IRI="#Carnivore"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dog"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasPart"/>
+            <Class IRI="#Brain"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dog"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasPart"/>
+            <Class IRI="#Heart"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dog"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasPart"/>
+            <Class IRI="#Limb"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dog"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasPart"/>
+            <Class IRI="#Tail"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dog"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#performs"/>
+            <Class IRI="#Bark"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Eagle"/>
+        <Class IRI="#Bird"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Eagle"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#eats"/>
+            <Class IRI="#BirdFood"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Eagle"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#lives_in"/>
+            <Class IRI="#Forest"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fish"/>
+        <Class IRI="#Animal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fish"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#performs"/>
+            <Class IRI="#Swim"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FishFood"/>
+        <Class IRI="#Food"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Flower"/>
+        <Class IRI="#Plant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fly"/>
+        <Class IRI="#Process"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Forest"/>
+        <Class IRI="#Habitat"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Forest"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#agent"/>
+            <Class IRI="#Chef"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fur"/>
+        <Class IRI="#BodyPart"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Heart"/>
+        <Class IRI="#BodyPart"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Human"/>
+        <Class IRI="#Primate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Human"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasPart"/>
+            <Class IRI="#Brain"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Human"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasPart"/>
+            <Class IRI="#Heart"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Human"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasPart"/>
+            <Class IRI="#Limb"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Human"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#performs_after_training"/>
+            <Class IRI="#Swim"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Leaf"/>
+        <Class IRI="#BodyPart"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Limb"/>
+        <Class IRI="#BodyPart"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mammal"/>
+        <Class IRI="#Animal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mammal"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasPart"/>
+            <Class IRI="#Fur"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Meow"/>
+        <Class IRI="#Process"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Oak"/>
+        <Class IRI="#Tree"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ocean"/>
+        <Class IRI="#Habitat"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Photosynthesis"/>
+        <Class IRI="#Process"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pine"/>
+        <Class IRI="#Tree"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Plant"/>
+        <Class IRI="#LivingBeing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Plant"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasPart"/>
+            <Class IRI="#Leaf"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Plant"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#performs"/>
+            <Class IRI="#Photosynthesis"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Primate"/>
+        <Class IRI="#Mammal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rose"/>
+        <Class IRI="#Flower"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Salmon"/>
+        <Class IRI="#Fish"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Salmon"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#eats"/>
+            <Class IRI="#FishFood"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Salmon"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#lives_in"/>
+            <Class IRI="#Ocean"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sparrow"/>
+        <Class IRI="#Bird"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Swim"/>
+        <Class IRI="#Process"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tail"/>
+        <Class IRI="#BodyPart"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tree"/>
+        <Class IRI="#Plant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tree"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasPart"/>
+            <Class IRI="#Leaf"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tulip"/>
+        <Class IRI="#Flower"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tuna"/>
+        <Class IRI="#Fish"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Wing"/>
+        <Class IRI="#BodyPart"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Bark"/>
+        <Class IRI="#Cook"/>
+        <Class IRI="#Fly"/>
+        <Class IRI="#Meow"/>
+        <Class IRI="#Photosynthesis"/>
+        <Class IRI="#Swim"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#BirdFood"/>
+        <Class IRI="#FishFood"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Brain"/>
+        <Class IRI="#Fur"/>
+        <Class IRI="#Heart"/>
+        <Class IRI="#Leaf"/>
+        <Class IRI="#Limb"/>
+        <Class IRI="#Tail"/>
+        <Class IRI="#Wing"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Cat"/>
+        <Class IRI="#Dog"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Eagle"/>
+        <Class IRI="#Sparrow"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Forest"/>
+        <Class IRI="#Ocean"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Oak"/>
+        <Class IRI="#Pine"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Rose"/>
+        <Class IRI="#Tulip"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Salmon"/>
+        <Class IRI="#Tuna"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Human"/>
+        <NamedIndividual IRI="#Alice"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Dog"/>
+        <NamedIndividual IRI="#Fido"/>
+    </ClassAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#performs_after_training"/>
+        <ObjectProperty IRI="#performs"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasPart"/>
+        <ObjectProperty IRI="#part_of"/>
+    </InverseObjectProperties>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#agent"/>
+    </AsymmetricObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#agent"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#hasPart"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#part_of"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#performs"/>
+    </TransitiveObjectProperty>
+    <ReflexiveObjectProperty>
+        <ObjectProperty IRI="#hasPart"/>
+    </ReflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#agent"/>
+    </IrreflexiveObjectProperty>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
