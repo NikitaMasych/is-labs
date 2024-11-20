@@ -1,0 +1,8 @@
+variables,condition
+"G1,G2","G1.split(""-"")[2] != G2.split(""-"")[2]"
+"G1,G3","G1.split(""-"")[2] != G3.split(""-"")[2]"
+"G2,G4","G2.split(""-"")[2] != G4.split(""-"")[2]"
+"G1,G3","G1.split(""-"")[1] != G3.split(""-"")[1]"
+"G2,G4","G2.split(""-"")[1] != G4.split(""-"")[1]"
+"G1,G2","G1.split(""-"")[0] != G2.split(""-"")[0]"
+"G3,G4","G3.split(""-"")[0] != G4.split(""-"")[0]"
